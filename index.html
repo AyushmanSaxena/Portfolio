@@ -1,28 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Ayushman Saxena | Portfolio</title>
   <meta name="description"
     content="Portfolio of Ayushman Saxena, Computer Science student showcasing skills, projects, and achievements.">
   <meta name="theme-color" content="#ffffff">
-
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
-
   <!-- Font Awesome Icons -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
   <style>
     /* ===== Global Styles ===== */
     * {
@@ -31,58 +25,47 @@
       box-sizing: border-box;
       scroll-behavior: smooth;
     }
-
     html {
       scroll-padding-top: 85px;
     }
-
     body {
       font-family: 'Poppins', sans-serif;
       background-color: #ffffff;
       color: #334155;
       line-height: 1.7;
     }
-
     img {
       display: block;
       max-width: 100%;
     }
-
     a {
       color: #475569;
       text-decoration: none;
       transition: color 0.3s ease, transform 0.3s ease;
     }
-
     a:hover {
       color: #2563eb;
     }
-
     a:focus-visible {
       outline: 3px solid #2563eb;
       outline-offset: 4px;
     }
-
     h1 {
       color: #0f172a;
     }
-
     h3 {
       font-size: 24px;
       color: #2563eb;
     }
-
     section {
       padding: 80px 6%;
       scroll-margin-top: 70px;
     }
-
     section > h1 {
       text-align: center;
       font-size: clamp(28px, 4vw, 36px);
       margin-bottom: 40px;
     }
-
     /* ===== Navbar ===== */
     header {
       position: fixed;
@@ -93,7 +76,6 @@
       background-color: rgba(255, 255, 255, 0.96);
       box-shadow: 0 2px 12px rgba(15, 23, 42, 0.08);
     }
-
     nav {
       max-width: 1400px;
       min-height: 70px;
@@ -104,14 +86,12 @@
       align-items: center;
       gap: 25px;
     }
-
     .logo {
       flex-shrink: 0;
       font-size: 26px;
       font-weight: 700;
       color: #2563eb;
     }
-
     nav ul {
       display: flex;
       align-items: center;
@@ -119,21 +99,18 @@
       gap: 24px;
       list-style: none;
     }
-
     nav ul li {
       font-size: 15px;
       font-weight: 500;
     }
-
     nav ul a {
       display: inline-block;
       padding: 6px 0;
     }
-
     nav ul a:hover {
       color: #2563eb;
     }
-
+    
     /* ===== Hero Section ===== */
     #home {
       min-height: 100vh;
@@ -152,7 +129,6 @@
       );
       border-radius: 0 0 30px 30px;
     }
-
     #home img {
       width: min(32%, 340px);
       min-width: 220px;
@@ -162,7 +138,6 @@
       border-radius: 24px;
       box-shadow: 0 12px 35px rgba(15, 23, 42, 0.2);
     }
-
     .intro {
       max-width: 600px;
       animation: fadeIn 1s ease;
@@ -172,7 +147,6 @@
       font-size: clamp(20px, 3vw, 28px);
       color: #334155;
     }
-
     .intro span {
       display: block;
       margin: 12px 0;
@@ -184,7 +158,6 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-
     .social-links {
       margin-top: 24px;
       display: flex;
@@ -192,12 +165,10 @@
       align-items: center;
       gap: 24px;
     }
-
     .social-links a {
       color: #334155;
       font-size: 28px;
     }
-
     .social-links a:hover {
       color: #2563eb;
       transform: translateY(-3px);
@@ -211,7 +182,6 @@
       justify-content: center;
       gap: 50px;
     }
-
     .about-content img {
       width: 280px;
       aspect-ratio: 4 / 5;
@@ -219,29 +189,25 @@
       border-radius: 20px;
       box-shadow: 0 8px 25px rgba(37, 99, 235, 0.15);
     }
-
     .about-text {
       max-width: 650px;
       font-size: 16px;
       color: #334155;
     }
-
     .about-text strong {
       color: #0f172a;
     }
-
     .about-text span {
       color: #2563eb;
       font-weight: 500;
     }
-
+  
     /* ===== Skills Section ===== */
     .skills {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 25px;
     }
-
     .tools {
       min-width: 0;
       padding: 25px;
@@ -250,25 +216,21 @@
       border-radius: 20px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-
     .tools:hover {
       transform: translateY(-4px);
       box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
     }
-
     .tools h3 {
       margin-bottom: 18px;
       font-size: 21px;
       color: #1e40af;
     }
-
     .tools ul {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       list-style: none;
     }
-
     .skills li {
       padding: 9px 15px;
       color: #334155;
@@ -279,7 +241,6 @@
       transition: background-color 0.3s ease,
                   border-color 0.3s ease;
     }
-
     .skills li:hover {
       background-color: #eff6ff;
       border-color: #2563eb;
@@ -291,7 +252,6 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 25px;
     }
-
     .project-card {
       display: flex;
       flex-direction: column;
@@ -302,19 +262,16 @@
       border-radius: 18px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-
     .project-card:hover {
       transform: translateY(-6px);
       box-shadow: 0 10px 25px rgba(37, 99, 235, 0.12);
       border-color: #bfdbfe;
     }
-
     .project-card h3 {
       margin-bottom: 12px;
       font-size: 21px;
       color: #1e40af;
     }
-
     .project-card p {
       flex-grow: 1;
       margin-bottom: 22px;
@@ -335,7 +292,6 @@
                   color 0.3s ease,
                   transform 0.3s ease;
     }
-
     .resume-btn:hover {
       color: #ffffff;
       background-color: #2563eb;
@@ -348,17 +304,14 @@
       padding: 70px 20px;
       background: #f1f5f9;
     }
-
     #contact > h1 {
       margin-bottom: 25px;
     }
-
     .contact-info h2 {
       margin-bottom: 12px;
       color: #334155;
       font-size: 19px;
     }
-
     .contact-info a {
       display: inline-block;
       margin: 5px;
@@ -382,7 +335,6 @@
         opacity: 0;
         transform: translateY(20px);
       }
-
       to {
         opacity: 1;
         transform: translateY(0);
@@ -394,86 +346,68 @@
       nav {
         padding: 12px 4%;
       }
-
       nav ul {
         gap: 15px;
       }
-
       .skills {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
-
       .projects {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
-
     @media (max-width: 600px) {
       html {
         scroll-padding-top: 120px;
       }
-
       nav {
         flex-direction: column;
         justify-content: center;
         gap: 5px;
       }
-
       .logo {
         font-size: 23px;
       }
-
       nav ul {
         width: 100%;
         justify-content: center;
         gap: 8px 16px;
       }
-
       nav ul li {
         font-size: 13px;
       }
-
       #home {
         min-height: auto;
         padding-top: 160px;
         gap: 25px;
       }
-
       #home img {
         width: 70%;
         min-width: 0;
         max-width: 260px;
       }
-
       .intro h2 {
         font-size: 20px;
       }
-
       .intro span {
         font-size: 34px;
       }
-
       section {
         padding: 60px 5%;
       }
-
       .about-content {
         gap: 25px;
       }
-
       .about-content img {
         width: min(75%, 250px);
       }
-
       .skills,
       .projects {
         grid-template-columns: 1fr;
       }
-
       .tools {
         padding: 20px;
       }
-
       .project-card {
         width: 100%;
       }
@@ -525,20 +459,6 @@
              target="_blank" rel="noopener noreferrer"
              aria-label="GitHub profile">
             <i class="fa-brands fa-github" aria-hidden="true"></i>
-          </a>
-
-          <!-- Replace with your actual LinkedIn profile URL -->
-          <a href="https://www.linkedin.com/"
-             target="_blank" rel="noopener noreferrer"
-             aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-          </a>
-
-          <!-- Add your resume PDF in the same folder as this HTML file -->
-          <a href="resume.pdf" download
-             aria-label="Download resume">
-            <i class="fa-solid fa-file-arrow-down"
-               aria-hidden="true"></i>
           </a>
         </div>
       </div>
@@ -705,13 +625,6 @@
         <a href="mailto:saxenanaman05@gmail.com">
           <i class="fa-solid fa-envelope" aria-hidden="true"></i>
           saxenanaman05@gmail.com
-        </a>
-      </div>
-
-      <div>
-        <a href="resume.pdf" download class="resume-btn">
-          <i class="fa-solid fa-download" aria-hidden="true"></i>
-          Download Resume
         </a>
       </div>
     </section>
